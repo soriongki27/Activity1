@@ -38,6 +38,12 @@ namespace FunctionDemo
         {
             Console.WriteLine($"Kamusta, {name}!");
         }
+        static void GetFeedback()
+        {
+            Console.WriteLine("How would you rate our system (1 to 5)?");
+            string rating = Console.ReadLine();
+            Console.WriteLine($"Thank you for rating us {rating}!");
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Enter your name:");
@@ -53,7 +59,7 @@ namespace FunctionDemo
             int age = int.Parse(Console.ReadLine());
             CheckEligibility(age);
 
-         
+            GetFeedback();
         }
     }
 }
