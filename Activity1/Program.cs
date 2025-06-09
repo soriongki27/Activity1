@@ -48,7 +48,10 @@ namespace FunctionDemo
             int age = int.Parse(Console.ReadLine());
             CheckEligibility(age);
 
-      
+            static void GreetInFilipino(string name)
+            {
+                Console.WriteLine($"Kamusta, {name}!");
+            }
         }
     }
 }
