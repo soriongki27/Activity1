@@ -53,7 +53,7 @@ namespace FunctionDemo
             int age = int.Parse(Console.ReadLine());
             CheckEligibility(age);
 
-         
+            DisplayDateTime();
         }
     }
 }
