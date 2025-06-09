@@ -34,11 +34,16 @@ namespace FunctionDemo
             Console.WriteLine("Current date and time: " + DateTime.Now);
         }
 
+        static void GreetInFilipino(string name)
+        {
+            Console.WriteLine($"Kamusta, {name}!");
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Enter your name:");
             string name = Console.ReadLine();
             WelcomeUser(name);
+            GreetInFilipino(name);
 
             Console.WriteLine("Enter a sentence:");
             string sentence = Console.ReadLine();
@@ -48,10 +53,7 @@ namespace FunctionDemo
             int age = int.Parse(Console.ReadLine());
             CheckEligibility(age);
 
-            static void GreetInFilipino(string name)
-            {
-                Console.WriteLine($"Kamusta, {name}!");
-            }
+         
         }
     }
 }
